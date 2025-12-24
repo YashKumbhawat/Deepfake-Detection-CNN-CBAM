@@ -103,3 +103,20 @@ Dataset
 
 
 ⚠️ Dataset is not included in this repository due to size constraints.
+
+
+⚙️ Training Configuration
+
+Framework: TensorFlow / Keras
+
+Optimizer: Adam
+
+Learning Rate: 0.0003
+
+Loss Function: Categorical Cross-Entropy
+
+Output Activation: Softmax
+
+Batch Size: 32
+
+Checkpointing: Enabled (epoch-wise saving)
