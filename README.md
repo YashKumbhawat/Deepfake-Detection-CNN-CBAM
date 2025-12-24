@@ -165,10 +165,7 @@ Ensures robustness against Google Colab timeouts
 
 Clone the repository
 
-Install dependencies using:
-
-pip install -r requirements.txt
-
+Install dependencies using: pip install -r requirements.txt
 
 Open the notebook in Google Colab or Jupyter
 
