@@ -89,14 +89,17 @@ The dataset follows a directory-based structure compatible with Keras ImageDataG
 
 Dataset
 
-Train
+    Train
 
-    Fake
+         Fake
     
-    Real
-Test
-Fake
-Real
+         Real
+         
+    Test
+    
+        Fake
+        
+        Real
 
 
 ⚠️ Dataset is not included in this repository due to size constraints.
