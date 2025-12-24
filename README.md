@@ -81,3 +81,19 @@ Highlights facial areas such as eyes, mouth, and boundaries
 Improves localization of deepfake artifacts
 
 Result: Better accuracy with minimal increase in model complexity.
+
+
+📂 Dataset Structure
+
+The dataset follows a directory-based structure compatible with Keras ImageDataGenerator:
+
+Dataset/
+├── Train/
+│   ├── Fake/
+│   └── Real/
+└── Test/
+    ├── Fake/
+    └── Real/
+
+
+⚠️ Dataset is not included in this repository due to size constraints.
