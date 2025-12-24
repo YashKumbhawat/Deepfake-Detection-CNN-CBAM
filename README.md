@@ -201,7 +201,8 @@ tqdm
 👤 Author
 
 Yash Kumbhawat
-Department of Information Technology
+
+Department of Information Technology, NITK
 
 
 📜 License
