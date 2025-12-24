@@ -20,3 +20,27 @@ Deepfake images often contain subtle and localized artifacts, such as:
 
 Standard CNNs treat all features equally, which can cause them to miss these subtle cues.
 To overcome this limitation, CBAM attention is integrated to guide the model toward important features and regions, improving detection accuracy.
+
+🧠 Model Architecture
+
+The proposed architecture consists of four CNN blocks, each followed by CBAM attention, and a fully connected classification head.
+
+Input Image (256×256×3)
+        ↓
+Convolution + CBAM + MaxPooling
+        ↓
+Convolution + CBAM + MaxPooling
+        ↓
+Convolution + CBAM + MaxPooling
+        ↓
+Convolution + CBAM + MaxPooling
+        ↓
+Flatten
+        ↓
+Dense (100) + Dropout
+        ↓
+Dense (2) + Softmax
+        ↓
+Prediction (Fake / Real)
+
+
