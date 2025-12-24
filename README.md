@@ -60,3 +60,24 @@ Dropout: 0.25 to reduce overfitting
 Output Layer: 2 neurons with Softmax activation
 
 
+🔍 Why CBAM Attention?
+
+CBAM enhances feature representation by applying attention in two stages:
+
+1️⃣ Channel Attention – What to focus on
+
+Identifies important feature maps
+
+Suppresses irrelevant or noisy channels
+
+Helps the model prioritize discriminative deepfake features
+
+2️⃣ Spatial Attention – Where to focus
+
+Identifies important spatial regions
+
+Highlights facial areas such as eyes, mouth, and boundaries
+
+Improves localization of deepfake artifacts
+
+Result: Better accuracy with minimal increase in model complexity.
