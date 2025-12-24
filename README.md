@@ -10,9 +10,13 @@ The model classifies an input image as Fake or Real by learning discriminative v
 Deepfake images often contain subtle and localized artifacts, such as:
 
 (1) unnatural textures
+
 (2) blending inconsistencies
+
 (3) lighting distortions
+
 (4) boundary artifacts around facial regions (eyes, mouth, skin)
+
 
 Standard CNNs treat all features equally, which can cause them to miss these subtle cues.
 To overcome this limitation, CBAM attention is integrated to guide the model toward important features and regions, improving detection accuracy.
