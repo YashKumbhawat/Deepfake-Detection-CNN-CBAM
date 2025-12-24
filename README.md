@@ -87,13 +87,13 @@ Result: Better accuracy with minimal increase in model complexity.
 
 The dataset follows a directory-based structure compatible with Keras ImageDataGenerator:
 
-Dataset/
-├── Train/
-│   ├── Fake/
-│   └── Real/
-└── Test/
-    ├── Fake/
-    └── Real/
+Dataset
+Train
+Fake
+Real
+Test
+Fake
+Real
 
 
 ⚠️ Dataset is not included in this repository due to size constraints.
