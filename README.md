@@ -174,3 +174,37 @@ Upload the dataset
 Run cells sequentially
 
 
+
+📦 Requirements
+
+All dependencies are listed in requirements.txt, including:
+
+TensorFlow
+
+NumPy
+
+Pandas
+
+Matplotlib
+
+Seaborn
+
+OpenCV
+
+Scikit-learn
+
+Pillow
+
+tqdm
+
+
+👤 Author
+
+Yash Kumbhawat
+Department of Computer Science
+AI & Data Science
+
+
+📜 License
+
+This project is intended for academic and educational purposes only.
