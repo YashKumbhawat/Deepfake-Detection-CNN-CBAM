@@ -90,15 +90,11 @@ The dataset follows a directory-based structure compatible with Keras ImageDataG
 Dataset
 
     Train
-
          Fake
-    
          Real
          
     Test
-    
         Fake
-        
         Real
 
 
