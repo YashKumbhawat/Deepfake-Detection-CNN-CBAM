@@ -25,22 +25,34 @@ To overcome this limitation, CBAM attention is integrated to guide the model tow
 
 The proposed architecture consists of four CNN blocks, each followed by CBAM attention, and a fully connected classification head.
 
+Architecture Flow
+
 Input Image (256×256×3)
-        ↓
-Convolution + CBAM + MaxPooling
-        ↓
-Convolution + CBAM + MaxPooling
-        ↓
-Convolution + CBAM + MaxPooling
-        ↓
-Convolution + CBAM + MaxPooling
-        ↓
-Flatten
-        ↓
-Dense (100) + Dropout
-        ↓
-Dense (2) + Softmax
-        ↓
-Prediction (Fake / Real)
+→ Convolution + CBAM + MaxPooling
+→ Convolution + CBAM + MaxPooling
+→ Convolution + CBAM + MaxPooling
+→ Convolution + CBAM + MaxPooling
+→ Flatten
+→ Dense (100) + Dropout
+→ Dense (2) + Softmax
+→ Prediction (Fake / Real)
+
+Layer-wise Description
+
+Input: RGB image of size 256×256×3
+
+Conv Block 1: 8 filters + CBAM + MaxPooling
+
+Conv Block 2: 16 filters + CBAM + MaxPooling
+
+Conv Block 3: 32 filters + CBAM + MaxPooling
+
+Conv Block 4: 64 filters + CBAM + MaxPooling
+
+Fully Connected Layer: 100 neurons with ReLU activation
+
+Dropout: 0.25 to reduce overfitting
+
+Output Layer: 2 neurons with Softmax activation
 
 
