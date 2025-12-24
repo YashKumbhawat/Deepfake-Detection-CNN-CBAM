@@ -92,10 +92,14 @@ Dataset
     Train
          Fake
          Real
+
+    Val
+         Fake
+         Real
          
     Test
-        Fake
-        Real
+         Fake
+         Real
 
 
 ⚠️ Dataset is not included in this repository due to size constraints.
