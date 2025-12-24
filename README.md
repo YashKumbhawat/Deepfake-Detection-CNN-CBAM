@@ -201,8 +201,7 @@ tqdm
 👤 Author
 
 Yash Kumbhawat
-Department of Computer Science
-AI & Data Science
+Department of Information Technology
 
 
 📜 License
