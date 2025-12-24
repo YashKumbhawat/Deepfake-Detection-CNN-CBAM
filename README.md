@@ -120,3 +120,60 @@ Output Activation: Softmax
 Batch Size: 32
 
 Checkpointing: Enabled (epoch-wise saving)
+
+
+
+📊 Evaluation Metrics
+
+Model performance is evaluated on the test dataset using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-score
+
+Confusion Matrix
+
+ROC–AUC Curve
+
+These metrics ensure a comprehensive and unbiased evaluation.
+
+
+🔎 Model Interpretability
+
+To improve transparency, Grad-CAM visualizations are used:
+
+Heatmaps are overlaid on test images
+
+Highlights regions contributing most to predictions
+
+Confirms that the model focuses on meaningful facial regions
+
+
+💾 Checkpointing & Resume Training
+
+Model weights are saved after every epoch
+
+Training automatically resumes from the latest checkpoint if interrupted
+
+Ensures robustness against Google Colab timeouts
+
+▶️ How to Run the Project
+
+Clone the repository
+
+Install dependencies using:
+
+pip install -r requirements.txt
+
+
+Open the notebook in Google Colab or Jupyter
+
+Upload the dataset
+
+Run cells sequentially
+
+
