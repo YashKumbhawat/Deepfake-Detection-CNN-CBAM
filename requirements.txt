@@ -1,6 +1,6 @@
-This file specifies all Python dependencies required to reproduce my deepfake detection project. It includes TensorFlow for model development,
-NumPy and Pandas for data handling, Matplotlib and Seaborn for visualization, OpenCV for image processing and Grad-CAM, Scikit-learn for evaluation metrics,
-Pillow for image loading, and tqdm for progress monitoring.
+// This file specifies all Python dependencies required to reproduce my deepfake detection project. It includes TensorFlow for model development,
+// NumPy and Pandas for data handling, Matplotlib and Seaborn for visualization, OpenCV for image processing and Grad-CAM, Scikit-learn for evaluation metrics,
+// Pillow for image loading, and tqdm for progress monitoring.
 
 tensorflow>=2.10.0
 numpy>=1.21.0
