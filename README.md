@@ -36,3 +36,17 @@ To overcome this limitation, **CBAM attention** is integrated into the network t
 ## 📂 Dataset Structure
 The dataset follows a directory-based structure compatible with **Keras ImageDataGenerator**:
 
+Dataset/
+│
+├── Train/
+│   ├── Fake/
+│   └── Real/
+│
+├── Val/
+│   ├── Fake/
+│   └── Real/
+│
+└── Test/
+    ├── Fake/
+    └── Real/
+
