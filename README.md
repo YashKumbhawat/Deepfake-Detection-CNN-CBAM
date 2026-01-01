@@ -66,7 +66,6 @@ The model progressively learns low-level to high-level facial features while sel
 ### Architecture Flow
 
 ```text
-
 Input Image (256×256×3)
 → Convolution + CBAM + MaxPooling
 → Convolution + CBAM + MaxPooling
@@ -76,8 +75,124 @@ Input Image (256×256×3)
 → Dense (100) + Dropout
 → Dense (2) + Softmax
 → Prediction (Fake / Real)
-
 ```
+
+
+### Layer-wise Description
+
+- **Input**: RGB image of size 256×256×3  
+- **Conv Block 1**: 8 filters + CBAM + MaxPooling  
+- **Conv Block 2**: 16 filters + CBAM + MaxPooling  
+- **Conv Block 3**: 32 filters + CBAM + MaxPooling  
+- **Conv Block 4**: 64 filters + CBAM + MaxPooling  
+- **Fully Connected Layer**: 100 neurons with ReLU activation  
+- **Dropout**: 0.25 to reduce overfitting  
+- **Output Layer**: 2 neurons with Softmax activation  
+
+---
+
+## 🔍 Why CBAM Attention?
+
+CBAM improves feature representation by applying attention in two sequential stages:
+
+### 1️⃣ Channel Attention — What to focus on
+
+- Identifies important feature maps  
+- Suppresses irrelevant or noisy channels  
+- Helps the model prioritize discriminative deepfake features  
+
+### 2️⃣ Spatial Attention — Where to focus
+
+- Identifies important spatial regions  
+- Highlights facial areas such as eyes, mouth, and boundaries  
+- Improves localization of deepfake artifacts  
+
+**Result**: Improved detection accuracy with minimal increase in model complexity.
+
+---
+
+## ⚙️ Training Configuration
+
+- **Framework**: TensorFlow / Keras  
+- **Optimizer**: Adam  
+- **Learning Rate**: 0.0003  
+- **Loss Function**: Categorical Cross-Entropy  
+- **Output Activation**: Softmax  
+- **Batch Size**: 32  
+- **Checkpointing**: Enabled (epoch-wise saving)  
+
+---
+
+## 📊 Evaluation Metrics
+
+The model performance is evaluated on the test dataset using:
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
+- Confusion Matrix  
+- ROC–AUC Curve  
+
+---
+
+## 🔎 Model Interpretability
+
+To improve transparency, **Grad-CAM visualizations** are used:
+
+- Heatmaps are overlaid on test images  
+- Highlights regions contributing most to predictions  
+- Confirms that the model focuses on meaningful facial regions  
+
+---
+
+## 💾 Checkpointing and Resume Training
+
+- Model weights are saved after every epoch  
+- Training automatically resumes from the latest checkpoint if interrupted  
+- Ensures robustness against Google Colab timeouts  
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the repository  
+2. Install dependencies:
+   ``` pip install -r requirements.txt ```
+3. Open the notebook in **Google Colab** or **Jupyter Notebook**  
+4. Upload the dataset  
+5. Run the cells sequentially  
+
+---
+
+## 🛠️ Technologies Used
+
+- Python  
+- TensorFlow / Keras  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- OpenCV  
+- Scikit-learn  
+- Pillow  
+- tqdm  
+
+---
+
+## 👤 Author
+
+**Yash Kumbhawat**  
+Department of Information Technology,  
+NITK  
+
+---
+
+## 📜 License
+
+This project is intended for **academic and educational purposes only**.  
+You are free to use and modify the code with proper attribution.
+
 
 
 
