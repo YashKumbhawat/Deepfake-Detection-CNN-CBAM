@@ -50,4 +50,35 @@ Dataset/
 └── Test/
     ├── Fake/
     └── Real/
+```
+
+---
+
+## 🏗️ Methodology
+
+The proposed approach uses a **custom CNN architecture** where each convolutional block is enhanced with **CBAM attention**.  
+The model progressively learns low-level to high-level facial features while selectively focusing on the most informative channels and spatial regions.
+
+---
+
+## 🧠 Model Architecture
+
+### Architecture Flow
+
+```text
+
+Input Image (256×256×3)
+→ Convolution + CBAM + MaxPooling
+→ Convolution + CBAM + MaxPooling
+→ Convolution + CBAM + MaxPooling
+→ Convolution + CBAM + MaxPooling
+→ Flatten
+→ Dense (100) + Dropout
+→ Dense (2) + Softmax
+→ Prediction (Fake / Real)
+
+```
+
+
+
 
